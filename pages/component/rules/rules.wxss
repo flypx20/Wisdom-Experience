@@ -1,0 +1,113 @@
+/* 规则提示层 */
+
+.rule .competer{
+  width:40px;
+  height:40px;
+  color:#fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background-size:cover;
+  background-position:right top;
+}   
+.rule .rule-title{
+  font-size: 12px;
+}
+.isRuleShow{
+  display: block;
+}
+.isRuleHide{
+  display: none;
+}
+.ruleZhezhao{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color:rgba(0, 0, 0, .5);
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+}
+.ruleZhezhaoContent{
+  padding: 100rpx 0;
+  width: 90%;
+  margin: 40% auto;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+    text-shadow: 0px 2px 3px rgba(105,105,105,0.4);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.ruleZhezhaoContent .modalTitle{
+  width:80%;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color:#fff;
+  margin-bottom:15rpx;
+}
+.ruleZhezhaoText{
+  width: 80%;
+  font-size: 35rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+}
+.ruleZhezhaoText text{
+  width: 100%;
+  text-indent: 2em;
+    text-align: justify;
+    line-height: 50rpx;
+    margin-top: 15rpx;
+}
+.ruleHide{
+  height: 60rpx!important;
+  width: 60rpx!important;
+  position: absolute;
+  top: 40rpx;
+  right: 60rpx;
+
+}
+.right{
+  display: inline-block;
+  width:25px;
+  height:5px;
+  background:white;
+  line-height: 0;
+  font-size: 0;
+  vertical-align:middle;
+  transform: rotate(45deg);
+  border-radius:5px;
+}
+.right:after{
+  content:'/';
+  display:block;
+  width:25px;
+  height:5px;
+  background:white;
+  transform:rotate(-90deg);
+  border-radius: 5px;
+}
+.advertisement{
+  font-size:50rpx;
+  color:white;
+  margin-top:100rpx;
+}
+.btn-primary{
+  background:none;
+  border:1px white solid;
+  color:white;
+  width:240rpx;
+  height:90rpx;
+  border-radius:45rpx;
+  line-height: 90rpx;
+  margin-top: 100rpx;
+}
+/* end */
