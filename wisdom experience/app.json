@@ -1,0 +1,20 @@
+{
+  "pages": [
+
+      "pages/index/index",
+      "pages/tikuDetail/tikuDetail"
+   
+
+
+
+
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

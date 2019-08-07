@@ -1,0 +1,26 @@
+<!-- 规则提示 -->
+      <view class="rule" >
+        <view class="competer" bindtap='showRule'style="background-image:url(https://dev.arkbao.com/xddj-minisvr/imgs/20190802/1564742055659.png)">?</view>
+      </view>
+  <view class="ruleZhezhao {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+    <view class='ruleZhezhaoContent' style="background-image:url(https://dev.arkbao.com/xddj-minisvr/imgs/20190802/1564742417923.png)">
+    <block wx:if="{{!showmodal}}">
+    <!-- 规则提示框 -->
+          <text class="modalTitle">小提示:</text>
+            <view class='ruleZhezhaoText' wx:key='index' wx:for='{{rule}}' wx:for-index='index'>
+
+              <text>{{index+1}}.{{item}}</text>
+            </view >
+
+    </block>
+    <block wx:else>
+    <!-- modal提示框 -->
+    <view class="advertisement">{{advertisement}}</view>
+    <button class="btn btn-primary" bindtap='hideRule'>确定</button>
+    </block>
+                <view class='ruleHide' bindtap='hideRule'>
+              <view class="right"></view>
+            </view>
+  </view>
+  </view>
+  <!-- end -->
